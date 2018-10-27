@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "node1" do |node1|
     node1.vm.box = "geerlingguy/centos7"
     node1.vm.hostname = "node1"
-    node1.vm.provision "shell", path: "dockerprov.sh"
+    node1.vm.provision "shell", path: "kubernetesprov.sh"
   #  node1.vm.network "public_network", ip: "192.168.0.17"
   #  node1.vm.network "public_network"
   #  node1.vm.network "public_network", bridge: "docker0"
